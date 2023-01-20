@@ -1,49 +1,113 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tarjeta de crédito válida</title>
   <link rel="stylesheet" href="style.css">
+
+  <!-- Letras -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
+  <div class="bg">
   <!-- formulario --> 
-  <form class="datosPersonales"> 
-    <label> Datos Personales </label> 
-    </br> </br>
-    <label for="nombre"> Nombre: </label>
-    <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" required> </input> </br>
-    <label for="apellido"> Apellido: </label>
-    <input type="text" id="apellido" placeholder="Apellidos" required> </input> </br>
-    <label for="numCelular"> Numero Telefónico: </label>
-    <input type="text" id="numCelular" placeholder="Celular" required> </input> </br>
-    <label for="correo"> Email: </label>
-    <input type="text" id="correo" placeholder="Email" required> </input> 
+<div class="formulariosDatos"> 
+    <form action="" class="form"> 
+    <label><h1 class="title"> Datos Personales </h1></label> 
+   
+    <div class="inputContainer">       
+      <input type="text" class="input" placeholder="ai" required>
+      <label for="" class="label"> Nombre Completo </label>
+    </div>
+    
+    <div class="inputContainer">       
+      <input type="tel" class="input" pattern="[0-9]{10}" placeholder="ai" required> 
+      <label for="" class="label"> Numero Telefónico a 10 digitos </label>
+    </div>
+
+    <div class="inputContainer">      
+      <input type="email" class="input" placeholder="ai" required>
+      <label for="" class="label"> Email </label> 
+    </div>
+
+    <a href="#direccion"> <input type="button" class="submitButton" value="Continuar"> </a>
+
   </form>
-    </br> </br> </br>
-  <form class="direccion"> 
-    <label> Direccion </label> 
-    </br> </br>
-    <label for="calleNumero"> Calle y Numero: </label>
-    <input type="text" id="calleNumero" placeholder="Calle y numero" required> </input>
-    <label for="numPostal"> Numero Postal: </label>
-    <input type="text" id="numPostal" placeholder="Numero Postal" required> </input>
-    <label for="colonia"> Colonia: </label>
-    <input type="text" id="colonia" placeholder="Colonia" required> </input>
-    <label for="ciudad"> Ciudad: </label>
-    <input type="text" id="ciudad" placeholder="Ciudad o municipio" required> </input>
-    <label for="estado"> Estado: </label>
-    <input type="text" id="estado" placeholder="Estado de la república" required> </input>
+</div>
+
+<div class="formulariosDatos"> 
+  <form action="" class="form" id="direccion"> 
+  <label><h1 class="title"> Direccion </h1></label> 
+ 
+   <div class="inputContainer">       
+      <input type="text" class="input" placeholder="ai" required>
+      <label for="" class="label"> Calle y Numero </label>
+    </div>
+
+    <div class="inputContainer">       
+      <input type="text" class="input" placeholder="ai" required>
+      <label for="" class="label" pattern="[0-9]{5}"> Codigo Postal </label>
+    </div>
+  
+    <div class="inputContainer">       
+      <input type="text" class="input" placeholder="ai" required>
+      <label for="" class="label" > Colonia </label>
+    </div>
+
+    <div class="inputContainer">       
+      <input type="text" class="input" placeholder="ai" required>
+      <label for="" class="label" > Ciudad o Municipio </label>
+    </div>
+
+    <div class="inputContainer">       
+      <input type="text" class="input" placeholder="ai" required>
+      <label for="" class="label" > Estado de la República </label>
+    </div>
+
+    <a href="#pago"> <input type="button" class="submitButton" value="Continuar a Pago"> </a>
+
   </form>
-    </br> </br> </br>
+</div>
+
+<div class="formulariosDatos"> 
+  <form action="" class="form" id="pago"> 
+  <label><h1 class="title"> Método de Pago </h1></label>
+  
+    <div class="inputContainer">
+      <input type="text" class="input" id="cardNumber" required placeholder="ai" required>
+      <label for="cardNumber" class="label"> Numero de Tarjeta </label>
+    </div>
+
+    <div class="inputContainer">
+      <input type="text" class="input" required placeholder="ai" required>
+      <label for="cardNumber" class="label"> Fecha de Vencimiento </label>
+    </div>
+
+    <input type="button" class="submitButton" onclick="validateNumber()" value="Aceptar">
+    <div id="result"> </div>
+
+  </form>
+</div>
+
+
+   
+ 
+   
+    
   <form class="datosBancarios"> 
     <label for="creditCard"> Numero de Tarjeta: </label>
-    <input type="text" name="cardNumber" id="cardNumber" maxlength="16" required> </input>
-    <button type="button" onclick="validateNumber()"> Validar </button>
+    <input type="text" class="cardNumber" id="cardNumber" minlength="1" maxlength="16" required> </input>
+    <button type="button" class="cardNumber" onclick="validateNumber()"> Validar </button>
     <div id="result"> </div>
   </form>
+
+</div>
 
   <script src="index.js"></script>
     

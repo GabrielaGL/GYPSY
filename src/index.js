@@ -46,7 +46,7 @@ function validateNumber() {
     }
     // Condicional en la que si el residuo de una multiplicacion /10 es cero, es válida
     // eslint-disable-next-line eqeqeq
-    if ((suma % 10) == 0) {
+    if ((suma % 10) === 0) {
       document.getElementById("result").innerHTML = "La tarjeta es válida";
     }
     else {
