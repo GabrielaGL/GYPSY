@@ -1,14 +1,52 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script src="index.js" type="module"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarjeta de crédito válida</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- formulario --> 
+  <form class="datosPersonales"> 
+    <label> Datos Personales </label> 
+    </br> </br>
+    <label for="nombre"> Nombre: </label>
+    <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" required> </input> </br>
+    <label for="apellido"> Apellido: </label>
+    <input type="text" id="apellido" placeholder="Apellidos" required> </input> </br>
+    <label for="numCelular"> Numero Telefónico: </label>
+    <input type="text" id="numCelular" placeholder="Celular" required> </input> </br>
+    <label for="correo"> Email: </label>
+    <input type="text" id="correo" placeholder="Email" required> </input> 
+  </form>
+    </br> </br> </br>
+  <form class="direccion"> 
+    <label> Direccion </label> 
+    </br> </br>
+    <label for="calleNumero"> Calle y Numero: </label>
+    <input type="text" id="calleNumero" placeholder="Calle y numero" required> </input>
+    <label for="numPostal"> Numero Postal: </label>
+    <input type="text" id="numPostal" placeholder="Numero Postal" required> </input>
+    <label for="colonia"> Colonia: </label>
+    <input type="text" id="colonia" placeholder="Colonia" required> </input>
+    <label for="ciudad"> Ciudad: </label>
+    <input type="text" id="ciudad" placeholder="Ciudad o municipio" required> </input>
+    <label for="estado"> Estado: </label>
+    <input type="text" id="estado" placeholder="Estado de la república" required> </input>
+  </form>
+    </br> </br> </br>
+  <form class="datosBancarios"> 
+    <label for="creditCard"> Numero de Tarjeta: </label>
+    <input type="text" name="cardNumber" id="cardNumber" maxlength="16" required> </input>
+    <button type="button" onclick="validateNumber()"> Validar </button>
+    <div id="result"> </div>
+  </form>
+
+  <script src="index.js"></script>
+    
+</body>
+
 </html>
