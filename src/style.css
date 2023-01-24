@@ -1,3 +1,5 @@
+
+
 body, html {
     height: 100%;
   }
@@ -5,8 +7,8 @@ body, html {
   body {
     box-sizing: border-box;
     margin: 0;
-    padding: 0; /* Espacio entre el cont del elemento y el borde */
-    background-color: white;
+    padding: 0; /* Espacio entre el contorno del elemento y el borde */
+    background-color: #eedcff;
     font-family: "Poppins", sans-serif;
   }
     /*Estilizar cada caja de formularios */
@@ -73,7 +75,7 @@ body, html {
     margin-left: auto;
     padding: 15px 30px;
     border: none;
-    background-color: purple;
+    background-color: #fa7ca4;
     color: white;
     border-radius: 6px;
     cursor: pointer; /* Hace que cuando pase el cursor, cambie a selección */
@@ -82,7 +84,7 @@ body, html {
   }
   /* Personalizar lo que el botón hace cuando el cursos pasa sobre él (hover) */
   .submitButton:hover {
-    background-color: #9867C5;
+    background-color: #ffb1ca;
     transform: translateY(-2px); /* Hace que el elemento se mueva, en este caso verticalmente -2 */
   }
   /* Indicaciones de los input y las etiquetas cuando se interactue con ellos (clic) */
@@ -92,11 +94,11 @@ body, html {
     z-index: 10;
     font-size: 14px;
     font-weight: 600;
-    color: purple;
+    color: #fa7ca4;
   }
   /* Indicaciones para cambiar bordes de input cuando se interactue (clic) */
   .input:focus {
-    border: 2px solid purple;
+    border: 2px solid #fa7ca4;
   }
   /* Especifica que placeholder no regrese cuando este lleno el input y que etiqueta pierda su color */ 
   .input:not(:placeholder-shown)+ .label {
@@ -105,4 +107,17 @@ body, html {
     z-index: 10;
     font-size: 14px;
     font-weight: 600;
+  }
+  /* Estilizar cajitas exp y cvv */
+  .inputContainer .flexbox {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .inputContainer .expira {
+    width: 100%;
+  }
+
+  .inputContainer .grupoCVV {
+    min-width: 100%;
   }

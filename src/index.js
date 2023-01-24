@@ -1,59 +1,25 @@
-function validateNumber() {
-    const parsed = document.getElementById("cardNumber").value;
-    // Condicional que alerta si es o no es un numero    
-    if (isNaN(parsed)) {
-      document.getElementById("result").innerHTML = "La tarjeta no es válida. Intente de nuevo";
-    }
-    else {
-      isValid(parsed);
-    }
-  }
-  
-  // Desarrollo del algoritmo 
-  function isValid(numeroDeTarjeta) {
-    const dividir = numeroDeTarjeta.split(""); // Dividir el num en digitos
-    // eslint-disable-next-line prefer-const
-    let reversa = dividir.reverse(); // Reversa
-    let suma = 0; // Variable para sumar mas adelante
-    console.log("El num se divide " + dividir); // El num se divide 
-    console.log("El numero esta en reversa " + reversa);
-    // Loop para doblar cada dos digitos     
-    for (let index = 1; index < reversa.length; index += 2) {
-      const doblar = Number(reversa[index]) * 2;
-      reversa[index] = doblar;
-      console.log("El numero se dobla en el indice: " + index + ":" + reversa[index]);
-      // Condicional para separar los digitos si son mayores a 9 y sumarlos
-      if (doblar > 9) {
-        const sumaMayores = doblar.toString().split("").map(Number).reduce(function (a, b) {
-          return a + parseInt(b)
-        }, 0);
-        suma += sumaMayores;
-        console.log("Suma de num mayores " + suma);
-      }
-      // Condicional para numeros menores a 9 y sumarlos
-      if (doblar < 9) {
-        let sumaMenores = doblar.toString().split("").map(Number).reduce(function (a, b) {
-          return a + parseInt(b)
-        }, 0);
-        suma += sumaMenores;
-        console.log("Suma de num menores " + suma)
-      }
-    }
-    // Sumar numeros que no fueron doblados
-    for (let i = 0; i < reversa.length; i += 2) {
-      suma += parseInt(reversa[i]);
-      console.log("Suma de num ordinarios " + suma)
-    }
-    // Condicional en la que si el residuo de una multiplicacion /10 es cero, es válida
-    // eslint-disable-next-line eqeqeq
-    if ((suma % 10) === 0) {
-      document.getElementById("result").innerHTML = "La tarjeta es válida";
-    }
-    else {
-      document.getElementById("result").innerHTML = "La tarjeta no es válida. Intente de nuevo";
-    }
-  }
-  
-// import validator from './validator.js';
+/* eslint-disable no-console */
+/* eslint-disable indent */
+/* eslint-disable no-unused-vars */
+import isValid from "./validator.js";
 
-// console.log(validator);
+document.querySelector("#validTarjeta").addEventListener("click", validateNumber);
+console.log(document.querySelector("#validTarjeta").addEventListener("click", validateNumber).value);
+
+function validateNumber() {
+  const parsed = document.getElementById("cardNumber").value;
+  // Condicional que alerta si es o no es un numero    
+  if (isNaN(parsed)) {
+    document.getElementById("result").innerHTML = "Solo se admiten numeros en la tarjeta";
+	console.log("Entro a la funcion")	
+  }
+  else if (parseInt(parsed)) {
+    isValid(parsed);
+		console.log("Entro a la funcion 2")
+  }
+  else {
+    document.getElementById("result").innerHTML = "Inserta un numero válido";
+		console.log("Entro a la funcion 3")
+  }
+  console.log(validateNumber)
+}
