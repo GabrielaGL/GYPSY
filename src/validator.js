@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 // Desarrollo del algoritmo 
-export default function isValid(numeroDeTarjeta) {
+function isValid(numeroDeTarjeta) {
   const dividir = numeroDeTarjeta.split(""); // Dividir el num en digitos
   const reversa = dividir.reverse(); // Reversa
   let suma = 0; // Variable para sumar mas adelante
@@ -27,16 +27,7 @@ export default function isValid(numeroDeTarjeta) {
   for (let i = 0; i < reversa.length; i += 2) {
     suma += parseInt(reversa[i]);
   }
-  validate(suma)
+  return suma;
 }
 
-// Condicional en la que si el residuo de una multiplicacion /10 es cero, es válida
-function validate(suma) {
-  if ((suma % 10) === 0) {
-    document.getElementById("result").innerHTML = "La tarjeta es válida";
-  }
-  else {
-    document.getElementById("result").innerHTML = "La tarjeta no es válida. Intente de nuevo";
-  }
-}
-console.log(validate);
+export default isValid;
