@@ -26,6 +26,7 @@ GYPSY es una plataforma diseñada para guardar tus datos bancarios y acceder a e
 
 Para realizar este proyecto se usaron conocimientos de Javascript, DOM y CSS.
 
+
 ## 2. Objetivos de aprendizaje generales
 
 ### HTML
@@ -87,10 +88,14 @@ Para realizar este proyecto se usaron conocimientos de Javascript, DOM y CSS.
   ### Diseño de producto
 
 - [x] **Seguir los principios básicos de diseño visual**
+  
 
 ## Proyecto
 <h3> Hito 1 </h3>
-
+  
+La interfaz de tu aplicación debe:
+   <li><b></b>Permitir insertar el número de la tarjeta que se quiere validar (texto) en un campo de texto vacío.</li>
+  
 ### 3.1 Recomendaciones
 * No te sientas culpable por no saber. SI estás acá es porque quieres aprender, si ya supieras programar estarías trabajando.
 * Enfócate en aprender y no solamente en "completar" el proyecto, "completarlo" es un medio para aprender.
