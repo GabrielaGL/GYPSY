@@ -1,7 +1,9 @@
 <h1 align="center"><b>Proyecto Validar Tarjeta de Crédito <br/>
  Laboratoria</b></h1>
  
- <img src="imagenes/GYPSY.png" alt="Logo" align="center" width="250px" height="250px">
+ <div align="center">
+ <img src="imagenes/GYPSY.png" alt="Logo" width="250px" height="250px">
+ </div>
  
 <h2 align="center">Autora <br/>
 Gabriela Gomez</h2>
@@ -94,16 +96,17 @@ Para realizar este proyecto se usaron conocimientos de Javascript, DOM y CSS.
 <h3> Hito 1 </h3>
   
 La interfaz de tu aplicación debe:
+  
   <li><b>Permitir insertar el número de la tarjeta que se quiere validar (texto) en un campo de texto vacío. </b></li>
   <li><b>Evitar que puedan escribir caracteres que no sean numéricos (dígitos 0-9).</b> </li>
   <li><b>Impedir que se intente validar si es que el campo está vacío (no se ha escrito nada).</b> </li>
   <li><b>Comunicar a la usuaria si se trata una tarjeta válida o no.</b> </li>
   <li><b>Ocultar todos los dígitos del número de tarjeta con exepción de los últimos 4 caracteres.</b> </li>
-  
+  </b> </b>
   <div align="center">
-  <img src="imagenes/validar-campo-vacio.png" width="300px" height="200px">
-  <img src="imagenes/validar-letras.png" width="300px" height="200px">
-  <img src="imagenes/validar-tarjeta.png" width="300px" height="200px">
+  <img src="imagenes/validar-campo-vacio.png" width="250px" height="200px">
+  <img src="imagenes/validar-letras.png" width="250px" height="200px"> 
+  <img src="imagenes/validar-tarjeta.png" width="250px" height="200px">
 </div>
   
 ### 3.1 Recomendaciones
