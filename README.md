@@ -14,12 +14,6 @@ Gabriela Gomez</h2>
 * [2. Resumen del proyecto](#2-resumen-del-proyecto)
 * [3. Proyecto](#3-proyecto)
 * [4. Producto](#4-producto)
-* [5. Hito Opcional: Mostrar la franquicia de tarjeta](#5-hito-opcional-mostrar-la-franquicia-de-tarjeta)
-* [6. Consideraciones técnicas](#6-consideraciones-técnicas)
-* [7. Objetivos de aprendizaje](#7-objetivos-de-aprendizaje)
-* [8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
-* [9. Para considerar Project Feedback](#9-para-considerar-project-feedback)
-
 ***
 
 ## Acerca del Proyecto
@@ -121,7 +115,7 @@ pruebas unitarias.
 </div>
  </b> 
  </b>
-## Producto
+## 4. Producto
 <h3> Quiénes son los principales usuarios de producto </h3>
 
 <li><b>Cualquiera que quiera hacer una compra en línea y no desee exponer sus datos bancarios a la página en la que quiere realizar su compra </b></li>
