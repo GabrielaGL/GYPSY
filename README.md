@@ -8,7 +8,7 @@ Gabriela Gomez</h2>
 
 ## Índice
 
-* [Acerca del Proyecto](#Acerca del proyecto)
+* [1. Acerca del Proyecto](#1-Acerca-del-proyecto)
 * [2. Resumen del proyecto](#2-resumen-del-proyecto)
 * [3. Consideraciones generales](#3-consideraciones-generales)
 * [4. Hito: Criterios de aceptación mínimos del proyecto](#4-hito-criterios-de-aceptación-mínimos-del-proyecto)
