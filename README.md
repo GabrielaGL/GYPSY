@@ -102,7 +102,9 @@ La interfaz de tu aplicación debe:
   <li><b>Impedir que se intente validar si es que el campo está vacío (no se ha escrito nada).</b> </li>
   <li><b>Comunicar a la usuaria si se trata una tarjeta válida o no.</b> </li>
   <li><b>Ocultar todos los dígitos del número de tarjeta con exepción de los últimos 4 caracteres.</b> </li>
-  </b> </b>
+  </b> 
+  </b>
+  </b>  
   <div align="center">
   <img src="imagenes/validar-campo-vacio.png" width="400px" height="200px">
   <img src="imagenes/validar-letras.png" width="400px" height="200px"> 
