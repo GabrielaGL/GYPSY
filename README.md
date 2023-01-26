@@ -13,7 +13,7 @@ Gabriela Gomez</h2>
 * [1. Acerca del Proyecto](#1-Acerca-del-proyecto)
 * [2. Resumen del proyecto](#2-resumen-del-proyecto)
 * [3. Proyecto](#3-proyecto)
-* [4. Hito: Criterios de aceptación mínimos del proyecto](#4-hito-criterios-de-aceptación-mínimos-del-proyecto)
+* [4. Producto](#4-producto)
 * [5. Hito Opcional: Mostrar la franquicia de tarjeta](#5-hito-opcional-mostrar-la-franquicia-de-tarjeta)
 * [6. Consideraciones técnicas](#6-consideraciones-técnicas)
 * [7. Objetivos de aprendizaje](#7-objetivos-de-aprendizaje)
@@ -105,7 +105,7 @@ La interfaz de tu aplicación debe:
   </b> 
   </b>
   </b>  
-  <div align="center">
+<div align="center">
   <img src="imagenes/validar-campo-vacio.png" width="400px" height="200px">
   <img src="imagenes/validar-letras.png" width="400px" height="200px"> 
   <img src="imagenes/validar-tarjeta.png" width="400px" height="200px">
@@ -115,3 +115,25 @@ La interfaz de tu aplicación debe:
 **2. Pruebas unitarias de los métodos.**  
 Los metódos de `validator` (`isValid` y `maskify`) deben tener cobertura con
 pruebas unitarias.
+</b>
+<div align="center">
+  <img src="imagenes/test.png" width="400px" height="200px">
+</div>
+ </b> 
+ </b>
+## Producto
+<h3> Quiénes son los principales usuarios de producto </h3>
+
+<li><b>Cualquiera que quiera hacer una compra en línea y no desee exponer sus datos bancarios a la página en la que quiere realizar su compra </b></li>
+</b> 
+</b>
+
+<h3> Cuáles son los objetivos de estos usuarios en relación con tu producto</h3>
+
+<li><b>Que sus datos bancarios se encuentren seguros mediante el respaldo de GYPSY</b></li>
+<li><b>Hacer compras en línea de manera segura sin arriesgar sus datos bancarios</b></li>
+<li><b>Evitar fraudes al asociar los datos bancarios a los datos personales y la verificación de dos pasos</b></li>
+
+<h3> Cómo crees que el producto que estás creando está resolviendo sus problemas.</h3>
+
+<li><b>La opcion de validar tarjeta permite saber si los datos ingresados son correctos para guardarlos y poder usarlos más adelante</b></li>
