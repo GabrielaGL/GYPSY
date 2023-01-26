@@ -1,4 +1,3 @@
-// eslint-disable-next-line no-unused-vars
 // Desarrollo del algoritmo 
 function isValid(cardNumber) {
   const dividir = cardNumber.split(""); // Dividir el num en digitos
