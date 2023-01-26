@@ -94,7 +94,11 @@ Para realizar este proyecto se usaron conocimientos de Javascript, DOM y CSS.
 <h3> Hito 1 </h3>
   
 La interfaz de tu aplicación debe:
-   <li><b></b>Permitir insertar el número de la tarjeta que se quiere validar (texto) en un campo de texto vacío.</li>
+  <li><b></b>Permitir insertar el número de la tarjeta que se quiere validar (texto) en un campo de texto vacío.</li>
+  <li><b>Evitar que puedan escribir caracteres que no sean numéricos (dígitos 0-9).</b> </li>
+  <li><b>Impedir que se intente validar si es que el campo está vacío (no se ha escrito nada).</b> </li>
+  <li><b>Comunicar a la usuaria si se trata una tarjeta válida o no.</b> </li>
+  <li><b>Ocultar todos los dígitos del número de tarjeta con exepción de los últimos 4 caracteres.</b> </li>
   
 ### 3.1 Recomendaciones
 * No te sientas culpable por no saber. SI estás acá es porque quieres aprender, si ya supieras programar estarías trabajando.
