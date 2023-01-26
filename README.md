@@ -8,7 +8,7 @@ Gabriela Gomez</h2>
 
 ## Índice
 
-* [1. Preámbulo](#1-preámbulo)
+* [Acerca del Proyecto](#Acerca del proyecto)
 * [2. Resumen del proyecto](#2-resumen-del-proyecto)
 * [3. Consideraciones generales](#3-consideraciones-generales)
 * [4. Hito: Criterios de aceptación mínimos del proyecto](#4-hito-criterios-de-aceptación-mínimos-del-proyecto)
@@ -20,7 +20,7 @@ Gabriela Gomez</h2>
 
 ***
 
-## 1. Preámbulo
+## Acerca del Proyecto
 
 El [algoritmo de Luhn](https://es.wikipedia.org/wiki/Algoritmo_de_Luhn),
 también llamado algoritmo de módulo 10, es un método de suma de verificación,
