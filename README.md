@@ -10,8 +10,8 @@ Gabriela Gomez</h2>
 
 ## Índice
 
-* [1. Acerca del Proyecto](#1-Acerca-del-proyecto)
-* [2. Resumen del proyecto](#2-resumen-del-proyecto)
+* [1. Acerca del Proyecto]
+* [2. Resumen del proyecto]
 * [3. Proyecto]
 * [4. Producto]
 ***
