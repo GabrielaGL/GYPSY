@@ -1,4 +1,10 @@
-# Tarjeta de crédito válida
+<h1 align="center"><b>Proyecto Validar Tarjeta de Crédito <br/>
+ Laboratoria</b></h1>
+ 
+ <img src="imagenes/GYPSY.png" alt="Logo" width="110px" height="110px">
+ 
+<h2 align="center">Autora</h2>
+<h2 align="center">Gabriela Gomez</h2>
 
 ## Índice
 
