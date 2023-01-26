@@ -1,39 +1,28 @@
 /* eslint-disable no-console */
 /* eslint-disable indent */
 /* eslint-disable no-unused-vars */
-import validator from "./validator.js";
+import {maskify, isValid} from "./validator.js";
 
-document.querySelector("#validTarjeta").addEventListener("click", validateNumber);
-console.log(document.querySelector("#validTarjeta").addEventListener("click", validateNumber).value);
+// const maskin = document.querySelector("#maskin");
+// maskin.addEventListener("click", maskify());
+document.querySelector("#pago").addEventListener("click", validateNumber);
 
-const parsed = document.getElementById("cardNumber").value;
-
-function validateNumber() {  
+function validateNumber() {
+  const parsed = document.getElementById("cardNumber").value;
   // Condicional que alerta si es o no es un numero    
   if (isNaN(parsed)) {
     document.getElementById("result").innerHTML = "Solo se admiten numeros en la tarjeta";
-	console.log("Entro a la funcion")	
+    console.log("Entro a la funcion");
   }
-  else if (parseInt(parsed)) {
-    validator.isValid(parsed));
-		console.log("Entro a la funcion 2")
-  }
-  else {
-    document.getElementById("result").innerHTML = "Inserta un numero válido";
-		console.log("Entro a la funcion 3")
-  }
-  console.log(validateNumber)
-}
-
-validate(validator.isValid(parsed));
-
-// Condicional en la que si el residuo de una multiplicacion /10 es cero, es válida
-function validate(suma) {
-  if ((suma % 10) === 0) {
-    document.getElementById("result").innerHTML = "La tarjeta es válida";
+  else if (parsed.length < 1) {
+    document.getElementById("result").innerHTML = "Ingresa un numero válido";
   }
   else {
-    document.getElementById("result").innerHTML = "La tarjeta no es válida. Intente de nuevo";
-  }
+    console.log("Entro a la tercera parte " + parseInt(parsed));
+    isValid();
+  }  
 }
-console.log(validate);
+
+// maskify(parsed)
+// console.log("Los numeros son " + maskify)
+// isValid();
