@@ -7,8 +7,11 @@
  <img src="imagenes/GYPSY.png" alt="Logo" width="250px" height="250px">
  </div>
  
-<h2 align="center">Autora <br/>
-Gabriela Gomez</h2>
+<h2 align="center">Autora</h2>
+[Gabriela Gomez](https://github.com/GaabsG)
+<br/>
+<br/>
+
 
 ## Índice
 
