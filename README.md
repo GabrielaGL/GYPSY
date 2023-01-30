@@ -10,11 +10,12 @@ Gabriela Gomez</h2>
 
 ## Índice
 
-* [1. Acerca del Proyecto]
-* [2. Resumen del proyecto]
-* [3. Proyecto]
-* [4. Producto]
-***
+<a href="#acerca-del.proyecto"> Acerca del Proyecto </a>
+<a href="#resumen-del-proyecto"> Resumen del Proyecto </a>
+<a href="#resumen-del-proyecto"> Objetivos de Aprendizaje </a>
+<a href="#proyecto"> Proyecto </a>
+<a href="#producto"> Producto </a>
+
 
 ## Acerca del Proyecto
 
