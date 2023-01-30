@@ -25,7 +25,6 @@ GYPSY es una plataforma diseñada para guardar tus datos bancarios y acceder a e
 
 Para realizar este proyecto se usaron conocimientos de Javascript, DOM y CSS. <br/>
 <p align="left"><a href="#volver">Volver</a></p>
-<br/>
 
 ## Objetivos de aprendizaje
 
@@ -88,7 +87,9 @@ Para realizar este proyecto se usaron conocimientos de Javascript, DOM y CSS. <b
   ### Diseño de producto
 
 - [x] **Seguir los principios básicos de diseño visual**
-  
+<br/>  
+
+<p align="left"><a href="#volver">Volver</a></p>
 
 ## Proyecto
 <h3> Hito 1 </h3>
@@ -100,9 +101,8 @@ La interfaz de tu aplicación debe:
   <li><b>Impedir que se intente validar si es que el campo está vacío (no se ha escrito nada).</b> </li>
   <li><b>Comunicar a la usuaria si se trata una tarjeta válida o no.</b> </li>
   <li><b>Ocultar todos los dígitos del número de tarjeta con exepción de los últimos 4 caracteres.</b> </li>
-  </b> 
-  </b>
-  </b>  
+<br/>
+<br/>
 <div align="center">
   <img src="imagenes/validar-campo-vacio.png" width="400px" height="200px">
   <img src="imagenes/validar-letras.png" width="400px" height="200px"> 
