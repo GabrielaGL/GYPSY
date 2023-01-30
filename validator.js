@@ -1,4 +1,3 @@
-// eslint-disable-next-line no-unused-vars
 // Desarrollo del algoritmo 
 function isValid(cardNumber) {
   const dividir = cardNumber.split(""); // Dividir el num en digitos
@@ -21,10 +20,12 @@ function isValid(cardNumber) {
       suma += sumaMenores;
     }
   }
-  for (let i = 0; i < reversa.length; i += 2) {
+  // Separar nums ordinarios (sin multiplicar)
+  for (let i = 0; i < reversa.length; i += 2) { 
     suma += Number(reversa[i]);
   }  
-  if (suma % 10 === 0) {
+  // Condicional para comparar residuo
+  if (suma % 10 === 0) { 
     return true;
   }
   else {
