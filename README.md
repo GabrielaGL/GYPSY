@@ -10,21 +10,20 @@ Gabriela Gomez</h2>
 
 ## Índice
 
-<a href="#acerca-del.proyecto"> Acerca del Proyecto </a> <br/>
-<a href="#resumen-del-proyecto"> Resumen del Proyecto </a> <br/>
-<a href="#resumen-del-proyecto"> Objetivos de Aprendizaje </a> <br/>
-<a href="#proyecto"> Proyecto </a> <br/>
-<a href="#producto"> Producto </a> <br/>
+<a href="#acerca-del-proyecto"> 1. Acerca del Proyecto </a> <br/>
+<a href="#resumen-del-proyecto"> 2. Resumen del Proyecto </a> <br/>
+<a href="#objetivos-de-aprendizaje"> 3. Objetivos de Aprendizaje </a> <br/>
+<a href="#proyecto"> 4. Proyecto </a> <br/>
+<a href="#producto"> 5. Producto </a> <br/>
 
 
-## Acerca del Proyecto
+## Acerca del proyecto
 
 GYPSY es una plataforma diseñada para guardar tus datos bancarios y acceder a ellos en un sólo click. Por medio de un registro previo en un formulario en el que incluye tus datos personales (nombre completo, teléfono, email y dirección), GYPSY te ayuda a manejar tus tarjetas de manera segura para que realizar compras en línea deje de ser una preocupación y se convierta en algo tan fácil como dar un click y esperar tus compras en la puerta de tu casa.
 
-Para realizar este proyecto se usaron conocimientos de Javascript, DOM y CSS.
+Para realizar este proyecto se usaron conocimientos de Javascript, DOM y CSS. <br/>
 
-
-## 2. Objetivos de aprendizaje generales
+## Objetivos de aprendizaje
 
 ### HTML
 
