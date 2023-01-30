@@ -8,7 +8,7 @@
  </div>
  
 <h2 align="center">Autora</h2>
-[Gabriela Gomez](https://github.com/GaabsG)
+<a href="https://github.com/GaabsG"><h2> Gabriela Gomez </h2></a> 
 <br/>
 <br/>
 
