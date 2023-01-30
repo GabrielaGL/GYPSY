@@ -7,9 +7,8 @@
  <img src="imagenes/GYPSY.png" alt="Logo" width="250px" height="250px">
  </div>
  
-<h2 align="center">Autora</h2>
-<a href="https://github.com/GaabsG"><h2> Gabriela Gomez </h2></a> 
-<br/>
+<h2 align="center">Autora
+  Gabriela Gomez </h2>
 <br/>
 
 
