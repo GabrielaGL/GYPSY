@@ -104,29 +104,29 @@ La interfaz de tu aplicación debe:
 <br/>
 <br/>
 <div align="center">
-  <img src="imagenes/validar-campo-vacio.png" width="400px" height="200px">
-  <img src="imagenes/validar-letras.png" width="400px" height="200px"> 
-  <img src="imagenes/validar-tarjeta.png" width="400px" height="200px">
+  <img src="imagenes/validar-campo-vacio.png" width="400px" height="200px"> <br/>
+  <img src="imagenes/validar-letras.png" width="400px" height="200px"> <br/>
+  <img src="imagenes/validar-tarjeta.png" width="400px" height="200px"> <br/>
 </div>
-
-<h3>
-**2. Pruebas unitarias de los métodos.**  
-Los metódos de `validator` (`isValid` y `maskify`) deben tener cobertura con
-pruebas unitarias.
-</b>
+<br/>
+  
+<h3> Pruebas unitarias de los métodos </h3>
+  
+Los métodos de "validator" ("isValid" y "maskify") deben tener cobertura con pruebas unitarias.
+<br/>
+<br/>
 <div align="center">
   <img src="imagenes/test.png" width="400px" height="200px">
 </div>
- </b> 
- </b>
+<br/>
+ <br/>
+<p align="left"><a href="#volver">Volver</a></p>
 
-
-4. Producto
+## Producto
 <h3> Quiénes son los principales usuarios de producto </h3>
 
 <li><b>Cualquiera que quiera hacer una compra en línea y no desee exponer sus datos bancarios a la página en la que quiere realizar su compra </b></li>
-</b> 
-</b>
+<br/>
 
 <h3> Cuáles son los objetivos de estos usuarios en relación con tu producto</h3>
 
@@ -137,3 +137,4 @@ pruebas unitarias.
 <h3> Cómo crees que el producto que estás creando está resolviendo sus problemas.</h3>
 
 <li><b>La opcion de validar tarjeta permite saber si los datos ingresados son correctos para guardarlos y poder usarlos más adelante</b></li>
+  <p align="left"><a href="#volver">Volver</a></p>
