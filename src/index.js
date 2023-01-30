@@ -3,9 +3,8 @@
 /* eslint-disable no-unused-vars */
 import { isValid, maskify } from "./validator.js";
 
-// const maskin = document.querySelector("#maskin");
-// maskin.addEventListener("click", maskify());
 document.querySelector("#pago").addEventListener("click", validateNumber);
+
 
 function validateNumber() {
   const cardNumber = document.getElementById("cardNumber").value;

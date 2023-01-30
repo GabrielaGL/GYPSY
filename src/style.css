@@ -11,8 +11,8 @@ body {
 }
 
 .header {
-  display: flex;
-  position: fixed;
+  display: flex; 
+  position: fixed; /* posicionamiento absoluto fijo */
   top: 0px;
   width: 100%;
   min-height: inherit;
@@ -67,13 +67,10 @@ body {
 /* Estilizar caja de formulario */
 .form {
   background-color: white;
-  width: 400px;
-  /* Ancho del área */
-  border-radius: 8px;
-  /* Borde redondeado*/
+  width: 400px; /* Ancho del área */
+  border-radius: 8px; /* Borde redondeado*/
   padding: 20px 40px;
-  box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
-  /* Sombra alrededor de la caja */
+  box-shadow: 0 10px 25px rgba(92, 99, 105, .2); /* Sombra alrededor de la caja */
 }
 
 /* Estilizar titulo del form (Datos Personales) */
@@ -114,40 +111,34 @@ body {
 /* Estilizar las etiquetas y hacer que queden en el placeholder */
 .label {
   position: absolute;
-  top: 15px;
-  /* top y left mueven el texto hacia arriba en relación al contenedor */
+  top: 15px; /* top y left mueven el texto hacia arriba en relación al contenedor */
   left: 15px;
   padding: 0 4px;
   background-color: white;
   color: #DADCE0;
   font-size: 16px;
-  transition: 0.5s;
-  /* Tiempo que tomará el texto en subir cuando el cursor pase encima */
-  z-index: 0;
-  /* Etiqueta se posicione detrás de otros elementos si se superponen */
+  transition: 0.5s; /* Tiempo que tomará el texto en subir cuando el cursor pase encima */
+  z-index: 0; /* Etiqueta se posicione detrás de otros elementos si se superponen */
 }
 
 /* Estilizar boton */
 .submitButton {
-  display: block;
-  /* Da espacio por encima y debajo, lo separa de otros elementos y no acepta elementos a su lado */
+  display: block; /* Da espacio por encima y debajo, lo separa de otros elementos y no acepta elementos a su lado */
   margin-left: auto;
   padding: 15px 30px;
   border: none;
   background-color: #fa7ca4;
   color: white;
   border-radius: 6px;
-  cursor: pointer;
-  /* Hace que cuando pase el cursor, cambie a selección */
+  cursor: pointer; /* Hace que cuando pase el cursor, cambie a selección */
   font-size: 16px;
   margin-top: 30px;
 }
 
-/* Personalizar lo que el botón hace cuando el cursos pasa sobre él (hover) */
+/* Personalizar lo que el botón hace cuando el cursor pasa sobre él (hover) */
 .submitButton:hover {
   background-color: #ffb1ca;
-  transform: translateY(-2px);
-  /* Hace que el elemento se mueva, en este caso verticalmente -2 */
+  transform: translateY(-2px); /* Hace que el elemento se mueva, en este caso verticalmente -2 */
 }
 
 /* Indicaciones de los input y las etiquetas cuando se interactue con ellos (clic) */
@@ -174,16 +165,6 @@ body {
   font-weight: 600;
 }
 
-/* Estilizar cajitas exp y cvv */
-.inputContainer .flexbox {
-  display: flex;
-  justify-content: space-between;
-}
-
-.inputContainer .expira {
-  width: 100%;
-}
-
-.inputContainer .grupoCVV {
-  min-width: 100%;
+a:link, a:visited {
+  text-decoration: none;
 }

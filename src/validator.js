@@ -20,10 +20,12 @@ function isValid(cardNumber) {
       suma += sumaMenores;
     }
   }
-  for (let i = 0; i < reversa.length; i += 2) {
+  // Separar nums ordinarios (sin multiplicar)
+  for (let i = 0; i < reversa.length; i += 2) { 
     suma += Number(reversa[i]);
   }  
-  if (suma % 10 === 0) {
+  // Condicional para comparar residuo
+  if (suma % 10 === 0) { 
     return true;
   }
   else {
