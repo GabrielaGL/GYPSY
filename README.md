@@ -15,10 +15,9 @@
 ## Índice
 
 <a href="#acerca-del-proyecto"> 1. Acerca del Proyecto </a> <br/>
-<a href="#resumen-del-proyecto"> 2. Resumen del Proyecto </a> <br/>
-<a href="#objetivos-de-aprendizaje"> 3. Objetivos de Aprendizaje </a> <br/>
-<a href="#proyecto"> 4. Proyecto </a> <br/>
-<a href="#producto"> 5. Producto </a> <br/>
+<a href="#objetivos-de-aprendizaje"> 2. Objetivos de Aprendizaje </a> <br/>
+<a href="#proyecto"> 3. Proyecto </a> <br/>
+<a href="#producto"> 4. Producto </a> <br/>
 
 
 ## Acerca del proyecto
