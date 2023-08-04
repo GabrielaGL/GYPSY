@@ -49,18 +49,9 @@
           <label for="" class="label"> Para </label>
         </div>
 
-        
         <div class="inputContainer">
-          <label for="moneyValue"> Valor de la Tarjeta </label>
-          <select name="moneyValue" class="selector" id="moneyValue"> 
-            <option value="minimalist"> Minimalist </option>
-            <option value="artsy"> Artsy </option>
-            <option value="wavy"> Wavy </option>
-            <option value="pink-pool"> Pink Pool </option>
-            <option value="beach"> Beach </option>
-            <option value="blue-flowers"> Blue Flowers </option>
-            <option value="flowers"> Flowers </option>
-          </select>
+          <input type="text" class="input" autocomplete="off" placeholder="" required>
+          <label for="" class="label"> Mensaje </label>
         </div>
 
         <div class="inputContainer">
@@ -80,8 +71,18 @@
 
       <form action="" class="form" id="pagos">
         <label>
-          <h1 class="title"> Datos de Envío </h1>
+          <h1 class="title"> Personalización </h1>
         </label>
+
+        <div class="inputContainer" style="margin-bottom: 35px;">
+          <label for="moneyValue"> Valor de la Tarjeta </label>
+          <select name="moneyValue" class="selector" id="moneyValue"> 
+            <option value="100"> $100 </option>
+            <option value="200"> $200 </option>
+            <option value="500"> $500 </option>
+            <option value="1000"> $1000 </option>
+          </select>
+        </div>
 
         <div class="inputContainer">
           <input type="email" class="input" autocomplete="off" placeholder="" required>
