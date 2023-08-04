@@ -5,16 +5,40 @@ import { isValid, maskify } from "./validator.js";
 
 document.querySelector("#pago").addEventListener("click", validateNumber);
 
-/* Selector changes background og gift card */
+/* Selector changes background of gift card */
 const optionCard = document.getElementById('bgCard');
 optionCard.addEventListener('change', (event) => {
-  document.getElementById('bgGiftCard').src = "./imgs/" + event.target.value + ".svg"
+  document.getElementById('bgGiftCard').src = "./imgs/" + event.target.value + ".png"
 })
+
+/* Input For changes the card */
+const nameForI = document.getElementById('nameForI')
+nameForI.addEventListener('input', () => {
+  document.getElementById('nameFor').innerText = 'Para: ' + nameForI.value;
+});
+
+/* Input By changes the card */
+const nameByI = document.getElementById('nameByI');
+nameByI.addEventListener('input', () => {
+  document.getElementById('nameBy').innerText = 'De: ' + nameByI.value;
+});
+
+/* Selector Amount changes the card */
+const amountI = document.getElementById('amountI');
+amountI.addEventListener('change', (event) => {
+  document.getElementById('amount').innerHTML = "Válido por $" + event.target.value
+})
+
+/* Input Message changes the card */
+const messageI = document.getElementById('messageI');
+messageI.addEventListener('input', () => {
+  document.getElementById('message').innerText = messageI.value;
+});
+
 
 
 function validateNumber() {
   const cardNumber = document.getElementById("cardNumber").value;
-  // Condicional que alerta si es o no es un numero    
   if (isNaN(cardNumber) || cardNumber.length < 1) {
     document.getElementById("result").innerHTML = "Ingresa un numero de tarjeta válido";
   } else {

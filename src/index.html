@@ -28,11 +28,11 @@
     <div class="formulariosDatos">
       <div class="form">
         <div class="containerCenter">
-          <img id="bgGiftCard" src="./imgs/minimalist.svg" width="300px">
-          <div id="nameFor"></div>
-          <div id="nameBy"></div>
-          <div id="amount"></div>
-          <div id="message"></div>
+          <img id="bgGiftCard" src="./imgs/minimalist.png" width="300px">
+          <div class="containerI" id="nameBy" style="margin-top: -79px;"> </div>
+          <div class="containerI" id="nameFor" style="margin-top: -41px"> </div>
+          <div class="containerI" id="amount" style="margin-top: 2px"> </div>
+          <div class="containerI" id="message" style="margin-top: 80px; width: 250px;"> </div>
         </div>
 
         <label>
@@ -40,17 +40,17 @@
         </label>
 
         <div class="inputContainerS">
-          <input type="text" class="input" autocomplete="off" placeholder="" required>
+          <input type="text" class="input" autocomplete="off" id="nameByI" placeholder="" required>
           <label for="" class="label"> De </label>
         </div>
 
         <div class="inputContainerS">
-          <input type="text" class="input" autocomplete="off" placeholder="" required>
+          <input type="text" class="input" autocomplete="off" id="nameForI" placeholder="" required>
           <label for="" class="label"> Para </label>
         </div>
 
         <div class="inputContainer">
-          <input type="text" class="input" autocomplete="off" placeholder="" required>
+          <input type="text" class="input" autocomplete="off" id="messageI" maxlength="110" placeholder="" required>
           <label for="" class="label"> Mensaje </label>
         </div>
 
@@ -75,8 +75,8 @@
         </label>
 
         <div class="inputContainer" style="margin-bottom: 35px;">
-          <label for="moneyValue"> Valor de la Tarjeta </label>
-          <select name="moneyValue" class="selector" id="moneyValue"> 
+          <label for="amountI"> Valor de la Tarjeta </label>
+          <select name="amountI" class="selector" id="amountI"> 
             <option value="100"> $100 </option>
             <option value="200"> $200 </option>
             <option value="500"> $500 </option>

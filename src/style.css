@@ -89,6 +89,13 @@ body {
   text-align: center;
 }
 
+
+#nameFor, #nameBy, #amount, #message {
+  position: absolute;
+  font-size: 12px;
+  font-family: 'Poppins';
+}
+
 /* Estilizar cada conjuto de etiqueta e input */
 .inputContainer {
   position: relative;
