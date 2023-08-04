@@ -1,20 +1,24 @@
-body, html {
+body,
+html {
   height: 100%;
 }
 
 body {
   box-sizing: border-box;
   margin: 0;
-  padding: 0; /* Espacio entre el contorno del elemento y el borde */
+  padding: 0;
+  /* Espacio entre el contorno del elemento y el borde */
   background-color: #eedcff;
   font-family: "Poppins", sans-serif;
 }
 
 .header {
-  display: flex; 
-  position: fixed; /* posicionamiento absoluto fijo */
+  display: flex;
+  position: fixed;
+  /* posicionamiento absoluto fijo */
   top: 0px;
   width: 100%;
+  height: 8%;
   min-height: inherit;
   background: white;
   align-items: center
@@ -22,7 +26,7 @@ body {
 
 .header h1 {
   position: relative;
-  left:30px;
+  left: 30px;
 }
 
 .header h2 {
@@ -51,19 +55,25 @@ body {
 
 /*Estilizar cada caja de formularios */
 .formulariosDatos {
-  display: flex; /* Asegura que los elementos dentro de div se despleguen lado a lado */
+  display: flex;
+  /* Asegura que los elementos dentro de div se despleguen lado a lado */
   justify-content: center;
-  align-items: center; /* Alineación predeterminada para los elementos */
-  height: 100vh;  /* vh (ventana gráfica); asegura que el formulario tenga el 100% de altura*/
+  align-items: center;
+  /* Alineación predeterminada para los elementos */
+  height: 100vh;
+  /* vh (ventana gráfica); asegura que el formulario tenga el 100% de altura*/
 }
 
 /* Estilizar caja de formulario */
 .form {
   background-color: white;
-  width: 400px; /* Ancho del área */
-  border-radius: 8px; /* Borde redondeado*/
+  width: 400px;
+  /* Ancho del área */
+  border-radius: 8px;
+  /* Borde redondeado*/
   padding: 20px 40px;
-  box-shadow: 0 10px 25px rgba(92, 99, 105, .2); /* Sombra alrededor de la caja */
+  box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+  /* Sombra alrededor de la caja */
 }
 
 .containerCenter {
@@ -84,7 +94,19 @@ body {
   position: relative;
   height: 45px;
   width: 90%;
-  margin-bottom: 17px;
+  margin-bottom: 10px;
+  margin-top: 3px;
+}
+
+.inputContainerS {
+  display: inline-flex;
+  position: relative;
+  height: 45px;
+  width: 37%;
+  margin-bottom: 10px;
+  margin-top: 3px;
+  margin-right: 49px;
+  margin-left: 0px;
 }
 
 .selector {
@@ -103,7 +125,7 @@ body {
   z-index: 1;
 }
 
-.selector > option {
+.selector>option {
   font-style: 'Poppins';
   font-size: 16px;
 
@@ -126,6 +148,7 @@ body {
   z-index: 1;
 }
 
+
 /* Hacer que el placeholder (texto dentro del input) sea transparente */
 ::placeholder {
   color: transparent;
@@ -134,25 +157,30 @@ body {
 /* Estilizar las etiquetas y hacer que queden en el placeholder */
 .label {
   position: absolute;
-  top: 6px; /* top y left mueven el texto hacia arriba en relación al contenedor */
+  top: 6px;
+  /* top y left mueven el texto hacia arriba en relación al contenedor */
   left: 15px;
   padding: 0 4px;
   background-color: white;
   color: #DADCE0;
   font-size: 16px;
-  transition: 0.5s; /* Tiempo que tomará el texto en subir cuando el cursor pase encima */
-  z-index: 0; /* Etiqueta se posicione detrás de otros elementos si se superponen */
+  transition: 0.5s;
+  /* Tiempo que tomará el texto en subir cuando el cursor pase encima */
+  z-index: 0;
+  /* Etiqueta se posicione detrás de otros elementos si se superponen */
 }
 
 /* Estilizar boton */
 .submitButton {
-  display: block; /* Da espacio por encima y debajo, lo separa de otros elementos y no acepta elementos a su lado */
+  display: block;
+  /* Da espacio por encima y debajo, lo separa de otros elementos y no acepta elementos a su lado */
   padding: 15px 30px;
   border: none;
   background-color: #fa7ca4;
   color: white;
   border-radius: 6px;
-  cursor: pointer; /* Hace que cuando pase el cursor, cambie a selección */
+  cursor: pointer;
+  /* Hace que cuando pase el cursor, cambie a selección */
   font-size: 16px;
   margin-top: 30px;
 }
@@ -160,7 +188,8 @@ body {
 /* Personalizar lo que el botón hace cuando el cursor pasa sobre él (hover) */
 .submitButton:hover {
   background-color: #ffb1ca;
-  transform: translateY(-2px); /* Hace que el elemento se mueva, en este caso verticalmente -2 */
+  transform: translateY(-2px);
+  /* Hace que el elemento se mueva, en este caso verticalmente -2 */
 }
 
 /* Indicaciones de los input y las etiquetas cuando se interactue con ellos (clic) */
@@ -187,6 +216,7 @@ body {
   font-weight: 600;
 }
 
-a:link, a:visited {
+a:link,
+a:visited {
   text-decoration: none;
 }
