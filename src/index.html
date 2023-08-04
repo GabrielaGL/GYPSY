@@ -29,15 +29,38 @@
       <div class="form">
         <div class="containerCenter">
           <img id="bgGiftCard" src="./imgs/minimalist.svg" width="300px">
+          <div id="nameFor"></div>
+          <div id="nameBy"></div>
+          <div id="amount"></div>
+          <div id="message"></div>
         </div>
 
         <label>
           <h1 class="title"> Datos de Gift Card</h1>
         </label>
 
+        <div class="inputContainerS">
+          <input type="text" class="input" autocomplete="off" placeholder="" required>
+          <label for="" class="label"> De </label>
+        </div>
+
+        <div class="inputContainerS">
+          <input type="text" class="input" autocomplete="off" placeholder="" required>
+          <label for="" class="label"> Para </label>
+        </div>
+
+        
         <div class="inputContainer">
-          <input type="email" class="input" autocomplete="off" placeholder="" required>
-          <label for="" class="label"> Email </label>
+          <label for="moneyValue"> Valor de la Tarjeta </label>
+          <select name="moneyValue" class="selector" id="moneyValue"> 
+            <option value="minimalist"> Minimalist </option>
+            <option value="artsy"> Artsy </option>
+            <option value="wavy"> Wavy </option>
+            <option value="pink-pool"> Pink Pool </option>
+            <option value="beach"> Beach </option>
+            <option value="blue-flowers"> Blue Flowers </option>
+            <option value="flowers"> Flowers </option>
+          </select>
         </div>
 
         <div class="inputContainer">
@@ -57,6 +80,15 @@
 
       <form action="" class="form" id="pagos">
         <label>
+          <h1 class="title"> Datos de Envío </h1>
+        </label>
+
+        <div class="inputContainer">
+          <input type="email" class="input" autocomplete="off" placeholder="" required>
+          <label for="" class="label"> Email </label>
+        </div>
+
+        <label>
           <h1 class="title"> Método de Pago </h1>
         </label>
 
@@ -69,16 +101,16 @@
         <div class="inputContainer">
           <input type="text" class="input" id="cardNumber" minlength="1" maxlength="16" autocomplete="off"
             placeholder="" required>
-          <label for="cardNumber" class="label"> Numero de Tarjeta </label>
+          <label for="cardNumber" class="label"> Número de Tarjeta </label>
         </div>
 
-        <div class="inputContainer">
+        <div class="inputContainerS">
           <input type="text" class="input" id="expiracion" maxlength="4" autocomplete="off" placeholder=""
             pattern="[0-9]{4}">
-          <label for="expiracion" class="label"> Expiracion </label>
+          <label for="expiracion" class="label"> Vencimiento </label>
         </div>
 
-        <div class="inputContainer">
+        <div class="inputContainerS">
           <input type="text" class="input" id="cvv" maxlength="3" autocomplete="off" placeholder="">
           <label for="cvv" class="label"> CVV </label>
         </div>
