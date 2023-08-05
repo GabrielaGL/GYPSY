@@ -1,9 +1,8 @@
 /* eslint-disable no-console */
 /* eslint-disable indent */
 /* eslint-disable no-unused-vars */
-import { isValid, maskify } from "./validator.js";
+import { isValid } from "./validator.js";
 
-document.querySelector("#pago").addEventListener("click", validateNumber);
 
 /* Selector changes background of gift card */
 const optionCard = document.getElementById('bgCard');
@@ -71,26 +70,30 @@ const cardNumber = document.getElementById("cardNumber");
 const bankDiv = document.getElementById('bank');
 cardNumber.addEventListener('input', () => {
   const cardNumberV = cardNumber.value;
-  console.log(cardNumberV.startsWith('4'));
   if (cardNumberV.startsWith('4')) {
     bankDiv.style.backgroundImage = 'url(./imgs/visa.png)';
   } else if (cardNumberV.startsWith('5')) {
     bankDiv.style.backgroundImage = 'url(./imgs/mastercard.png)';
+  } else {
+    bankDiv.style.backgroundImage = 'url()';
   }
 })
 
 
+document.querySelector("#pago").addEventListener("click", validateNumber);
 
 
 function validateNumber() {
   const cardNumber = document.getElementById("cardNumber").value;
   if (isNaN(cardNumber) || cardNumber.length < 1) {
     document.getElementById("result").innerHTML = "Ingresa un numero de tarjeta válido";
-  } else {
+  } else if (cardNumber.startsWith('4') || cardNumber.startsWith('5')) {
     if (isValid(cardNumber) === true) {
-      document.getElementById("result").innerHTML = "La tarjeta " + maskify(cardNumber) + " es válida";
+      document.getElementById("result").innerHTML = "La tarjeta " + cardNumber + " es válida";
     } else {
       document.getElementById("result").innerHTML = "La tarjeta no es válida. Intente de nuevo";
     }
+  } else {
+    document.getElementById("result").innerHTML = "Lo sentimos, por el momento solo tenemos pagos disponibles con Visa o Mastercard";
   }
 }
