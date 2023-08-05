@@ -35,6 +35,36 @@ messageI.addEventListener('input', () => {
   document.getElementById('message').innerText = messageI.value;
 });
 
+/**   */
+const expiracion = document.getElementById('expiracion');
+expiracion.addEventListener('input', () => {
+  const inputValue = expiracion.value;
+  let formattedValue = '';
+
+  for (let i = 0; i < inputValue.length; i++) {
+    if (i === 2) {
+      formattedValue += '/' + inputValue[i];
+    } else {
+      formattedValue += inputValue[i];
+    }
+  }
+
+  expiracion.value = formattedValue;
+});
+
+/** Show secret cvv */
+const cvvI = document.getElementById('cvv');
+const cvvButton = document.getElementById('secret');
+cvvButton.addEventListener('click', () => {
+  if(cvvI.type === 'text') {
+    cvvI.type = 'password'; 
+    cvvButton.style.backgroundImage = 'url(./imgs/closed-eye.png)';
+  } else {
+    cvvI.type = 'text';
+    cvvButton.style.backgroundImage = 'url(./imgs/open-eye.png)';
+
+  }
+})
 
 
 function validateNumber() {

@@ -68,12 +68,11 @@ body {
 .form {
   background-color: white;
   width: 400px;
-  /* Ancho del área */
   border-radius: 8px;
-  /* Borde redondeado*/
   padding: 20px 40px;
   box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
-  /* Sombra alrededor de la caja */
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .containerCenter {
@@ -90,10 +89,27 @@ body {
 }
 
 
-#nameFor, #nameBy, #amount, #message {
+#nameFor,
+#nameBy,
+#amount,
+#message {
   position: absolute;
   font-size: 12px;
   font-family: 'Poppins';
+}
+
+#secret {
+  position: absolute;
+  width: 30px;
+  height: 16px;
+  margin-top: 9px;
+  margin-left: 150px;
+  background-image: url(./imgs/open-eye.png);
+  background-size: cover;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 2;
 }
 
 /* Estilizar cada conjuto de etiqueta e input */

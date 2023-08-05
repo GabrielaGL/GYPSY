@@ -28,11 +28,11 @@
     <div class="formulariosDatos">
       <div class="form">
         <div class="containerCenter">
-          <img id="bgGiftCard" src="./imgs/minimalist.png" width="300px">
+          <img id="bgGiftCard" src="./imgs/minimalist.png" width="280px">
           <div class="containerI" id="nameBy" style="margin-top: -79px;"> </div>
           <div class="containerI" id="nameFor" style="margin-top: -41px"> </div>
           <div class="containerI" id="amount" style="margin-top: 2px"> </div>
-          <div class="containerI" id="message" style="margin-top: 80px; width: 250px;"> </div>
+          <div class="containerI" id="message" style="margin-top: 80px; width: 250px; font-weight: bold;"> </div>
         </div>
 
         <label>
@@ -54,6 +54,16 @@
           <label for="" class="label"> Mensaje </label>
         </div>
 
+        <div class="inputContainer" style="margin-bottom: 35px;">
+          <label for="amountI"> Valor de la Tarjeta </label>
+          <select name="amountI" class="selector" id="amountI"> 
+            <option value="100"> $100 </option>
+            <option value="200"> $200 </option>
+            <option value="500"> $500 </option>
+            <option value="1000"> $1000 </option>
+          </select>
+        </div>
+
         <div class="inputContainer">
           <label for="bgCard"> Diseño de Gift Card </label>
           <select name="bgCard" class="selector" id="bgCard"> Diseño de Gift Card
@@ -71,18 +81,9 @@
 
       <form action="" class="form" id="pagos">
         <label>
-          <h1 class="title"> Personalización </h1>
+          <h1 class="title"> ¿A qué email lo enviamos? </h1>
         </label>
 
-        <div class="inputContainer" style="margin-bottom: 35px;">
-          <label for="amountI"> Valor de la Tarjeta </label>
-          <select name="amountI" class="selector" id="amountI"> 
-            <option value="100"> $100 </option>
-            <option value="200"> $200 </option>
-            <option value="500"> $500 </option>
-            <option value="1000"> $1000 </option>
-          </select>
-        </div>
 
         <div class="inputContainer">
           <input type="email" class="input" autocomplete="off" placeholder="" required>
@@ -106,14 +107,15 @@
         </div>
 
         <div class="inputContainerS">
-          <input type="text" class="input" id="expiracion" maxlength="4" autocomplete="off" placeholder=""
+          <input type="text" class="input" id="expiracion" maxlength="5" autocomplete="off" placeholder=""
             pattern="[0-9]{4}">
           <label for="expiracion" class="label"> Vencimiento </label>
         </div>
 
         <div class="inputContainerS">
-          <input type="text" class="input" id="cvv" maxlength="3" autocomplete="off" placeholder="">
+          <input type="password" class="input" id="cvv" maxlength="3" autocomplete="off" placeholder="">
           <label for="cvv" class="label"> CVV </label>
+          <button type="button" id="secret" ></button>
         </div>
 
         <label class="terminos"> <input type="checkbox" required> Acepto términos y condiciones</label>
