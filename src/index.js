@@ -85,15 +85,27 @@ document.querySelector("#pago").addEventListener("click", validateNumber);
 
 function validateNumber() {
   const cardNumber = document.getElementById("cardNumber").value;
-  if (isNaN(cardNumber) || cardNumber.length < 1) {
-    document.getElementById("result").innerHTML = "Ingresa un numero de tarjeta válido";
+  const resultDiv = document.getElementById("result");
+  const formF = document.getElementById('checkout');
+  resultDiv.innerHTML = '';
+  if (!formF.checkValidity()) {
+    resultDiv.innerHTML = "Es necesario rellenar todos los campos";
+    resultDiv.classList.add('vibrate-animation');
   } else if (cardNumber.startsWith('4') || cardNumber.startsWith('5')) {
     if (isValid(cardNumber) === true) {
-      document.getElementById("result").innerHTML = "La tarjeta " + cardNumber + " es válida";
+      window.dialog.showModal();
+      formF.reset()
     } else {
-      document.getElementById("result").innerHTML = "La tarjeta no es válida. Intente de nuevo";
+      resultDiv.innerHTML = "La tarjeta no es válida. Intente de nuevo";
+      resultDiv.classList.add('vibrate-animation');
     }
   } else {
-    document.getElementById("result").innerHTML = "Lo sentimos, por el momento solo tenemos pagos disponibles con Visa o Mastercard";
+    resultDiv.innerHTML = "Lo sentimos, por el momento solo tenemos pagos disponibles con Visa o Mastercard";
+    resultDiv.classList.add('vibrate-animation');
   }
+  setTimeout(() => {
+    resultDiv.classList.remove('vibrate-animation');
+  }, 300);
 }
+
+

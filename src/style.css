@@ -7,7 +7,6 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* Espacio entre el contorno del elemento y el borde */
   background-color: #eedcff;
   font-family: "Poppins", sans-serif;
 }
@@ -15,7 +14,6 @@ body {
 .header {
   display: flex;
   position: fixed;
-  /* posicionamiento absoluto fijo */
   top: 0px;
   width: 100%;
   height: 8%;
@@ -263,4 +261,91 @@ a:visited {
   margin-top: 9px;
   color: red;
   font-weight: bold;
+}
+
+.vibrate-animation {
+  animation: vibrate 0.5s;
+}
+
+@keyframes vibrate {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(-1deg); }
+  20% { transform: rotate(1deg); }
+  30% { transform: rotate(0deg); }
+  40% { transform: rotate(1deg); }
+  50% { transform: rotate(-1deg); }
+  60% { transform: rotate(0deg); }
+  70% { transform: rotate(-1deg); }
+  80% { transform: rotate(1deg); }
+  90% { transform: rotate(0deg); }
+  100% { transform: rotate(-1deg); }
+}
+
+
+
+/*Dialog Styles*/
+dialog {
+  padding: 1rem 3rem;
+  background: white;
+  max-width: 400px;
+  padding-top: 2rem;
+  border-radius: 20px;
+  border: 0;
+  box-shadow: 0 5px 30px 0 rgb(0 0 0 / 10%);
+  animation: fadeIn 1s ease both;
+}
+
+.logoModal {
+  background-size: cover;
+  width: 92px;
+  margin-left: -30px;
+}
+
+dialog h2 {
+  font-weight: 600;
+  font-size: 20px;
+  padding-bottom: 1rem;
+  margin-top: -56px;
+  margin-left: 60px;
+}
+
+&::backdrop {
+  animation: fadeIn 1s ease both;
+  background: rgb(255 255 255 / 40%);
+  z-index: 2;
+  backdrop-filter: blur(20px);
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.3rem;
+  padding: 0.5rem 0;
+}
+
+.x {
+  filter: grayscale(1);
+  border: none;
+  background: none;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  transition: ease filter, transform 0.3s;
+  cursor: pointer;
+  transform-origin: center;
+
+  &:hover {
+    filter: grayscale(0);
+    transform: scale(1.1);
+  }
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
