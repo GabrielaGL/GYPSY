@@ -56,8 +56,8 @@ expiracion.addEventListener('input', () => {
 const cvvI = document.getElementById('cvv');
 const cvvButton = document.getElementById('secret');
 cvvButton.addEventListener('click', () => {
-  if(cvvI.type === 'text') {
-    cvvI.type = 'password'; 
+  if (cvvI.type === 'text') {
+    cvvI.type = 'password';
     cvvButton.style.backgroundImage = 'url(./imgs/closed-eye.png)';
   } else {
     cvvI.type = 'text';
@@ -65,6 +65,21 @@ cvvButton.addEventListener('click', () => {
 
   }
 })
+
+/** Input image changes visa-mastercard */
+const cardNumber = document.getElementById("cardNumber");
+const bankDiv = document.getElementById('bank');
+cardNumber.addEventListener('input', () => {
+  const cardNumberV = cardNumber.value;
+  console.log(cardNumberV.startsWith('4'));
+  if (cardNumberV.startsWith('4')) {
+    bankDiv.style.backgroundImage = 'url(./imgs/visa.png)';
+  } else if (cardNumberV.startsWith('5')) {
+    bankDiv.style.backgroundImage = 'url(./imgs/mastercard.png)';
+  }
+})
+
+
 
 
 function validateNumber() {

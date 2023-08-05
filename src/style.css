@@ -98,13 +98,23 @@ body {
   font-family: 'Poppins';
 }
 
+#bank {
+  position: absolute;
+  width: 30px;
+  height: 18px;
+  margin-top: 9px;
+  margin-left: 354px;
+  background-size: cover;
+  border: none;
+}
+
 #secret {
   position: absolute;
   width: 30px;
   height: 16px;
   margin-top: 9px;
   margin-left: 150px;
-  background-image: url(./imgs/open-eye.png);
+  background-image: url(./imgs/closed-eye.png);
   background-size: cover;
   border: none;
   background-color: transparent;
@@ -196,7 +206,6 @@ body {
 /* Estilizar boton */
 .submitButton {
   display: block;
-  /* Da espacio por encima y debajo, lo separa de otros elementos y no acepta elementos a su lado */
   padding: 15px 30px;
   border: none;
   background-color: #fa7ca4;
@@ -206,6 +215,7 @@ body {
   /* Hace que cuando pase el cursor, cambie a selección */
   font-size: 16px;
   margin-top: 30px;
+  font-family: 'Poppins';
 }
 
 /* Personalizar lo que el botón hace cuando el cursor pasa sobre él (hover) */
