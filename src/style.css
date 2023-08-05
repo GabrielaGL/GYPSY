@@ -83,7 +83,7 @@ body {
 
 /* Estilizar titulo del form (Datos Personales) */
 .title {
-  font-size: 25px;
+  font-size: 22px;
   margin-bottom: 15px;
   text-align: center;
 }
@@ -158,8 +158,8 @@ body {
   z-index: 1;
 }
 
-.selector>option {
-  font-style: 'Poppins';
+.selector option {
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
 
 }
@@ -206,7 +206,7 @@ body {
 /* Estilizar boton */
 .submitButton {
   display: block;
-  padding: 15px 30px;
+  padding: 12px 20px;
   border: none;
   background-color: #fa7ca4;
   color: white;
@@ -214,7 +214,7 @@ body {
   cursor: pointer;
   /* Hace que cuando pase el cursor, cambie a selección */
   font-size: 16px;
-  margin-top: 30px;
+  margin-top: 18px;
   font-family: 'Poppins';
 }
 
@@ -252,4 +252,15 @@ body {
 a:link,
 a:visited {
   text-decoration: none;
+}
+
+.terminos {
+  font-size: 14px;
+}
+
+#result {
+  font-size: 13px;
+  margin-top: 9px;
+  color: red;
+  font-weight: bold;
 }
