@@ -40,23 +40,23 @@
         </label>
 
         <div class="inputContainerS">
-          <input type="text" class="input" autocomplete="off" id="nameByI" placeholder="" required>
+          <input type="text" class="input" autocomplete="off" id="nameByI" placeholder="" title="Quién envía la Gift Card" required>
           <label for="" class="label"> De </label>
         </div>
 
         <div class="inputContainerS">
-          <input type="text" class="input" autocomplete="off" id="nameForI" placeholder="" required>
+          <input type="text" class="input" autocomplete="off" id="nameForI" placeholder="" title="Quién recibe la Gift Card" required>
           <label for="" class="label"> Para </label>
         </div>
 
         <div class="inputContainer">
-          <input type="text" class="input" autocomplete="off" id="messageI" maxlength="110" placeholder="" required>
+          <input type="text" class="input" autocomplete="off" id="messageI" maxlength="110" placeholder="" title="Mensaje de máximo 110 caracteres" required>
           <label for="" class="label"> Mensaje </label>
         </div>
 
         <div class="inputContainer" style="margin-bottom: 35px;">
           <label for="amountI"> Valor de la Tarjeta </label>
-          <select name="amountI" class="selector" id="amountI"> 
+          <select name="amountI" class="selector" id="amountI" title="Monto de la Gift Card"> 
             <option value="100"> $100 </option>
             <option value="200"> $200 </option>
             <option value="500"> $500 </option>
@@ -66,7 +66,7 @@
 
         <div class="inputContainer">
           <label for="bgCard"> Diseño de Gift Card </label>
-          <select name="bgCard" class="selector" id="bgCard"> Diseño de Gift Card
+          <select name="bgCard" class="selector" id="bgCard" title="Diseño de la Gift Card"> Diseño de Gift Card
             <option value="minimalist"> Minimalist </option>
             <option value="artsy"> Artsy </option>
             <option value="wavy"> Wavy </option>
@@ -81,13 +81,18 @@
 
       <form action="" class="form" id="pagos">
         <label>
-          <h1 class="title"> ¿A qué email lo enviamos? </h1>
+          <h1 class="title"> Datos de Envío </h1>
         </label>
 
 
         <div class="inputContainer">
-          <input type="email" class="input" autocomplete="off" placeholder="" required>
+          <input type="email" class="input" autocomplete="off" placeholder="" title="Email de la persona que va recibir Gift Card" required>
           <label for="" class="label"> Email </label>
+        </div>
+
+        <div class="inputContainer">
+          <input type="text" class="input" autocomplete="off" placeholder="" maxlength="10" pattern="[0-9]{10}" title="Teléfono a 10 dígitos" required>
+          <label for="" class="label"> Teléfono a 10 dígitos </label>
         </div>
 
         <label>
@@ -95,27 +100,28 @@
         </label>
 
         <div class="inputContainer">
-          <input type="text" class="input" id="owner" minlength="1" autocomplete="off" placeholder="" required>
+          <input type="text" class="input" id="owner" minlength="1" autocomplete="off" placeholder="" title="Nombre Completo del titular de la tarjeta" required>
           <label for="owner" class="label"> Nombre Completo </label>
         </div>
 
 
         <div class="inputContainer">
           <input type="text" class="input" id="cardNumber" minlength="1" maxlength="16" autocomplete="off"
-            placeholder="" required>
+            placeholder="" pattern="[0-9]{16}" required title="Número de tarjeta" >
           <label for="cardNumber" class="label"> Número de Tarjeta </label>
+          <button type="button" class="buttonI" id="secret" ></button>
         </div>
 
         <div class="inputContainerS">
           <input type="text" class="input" id="expiracion" maxlength="5" autocomplete="off" placeholder=""
-            pattern="[0-9]{4}">
-          <label for="expiracion" class="label"> Vencimiento </label>
+            pattern="[0-9]{4}" title="Vencimiento">
+          <label for="expiracion" class="label" > Vencimiento </label>
         </div>
 
         <div class="inputContainerS">
-          <input type="password" class="input" id="cvv" maxlength="3" autocomplete="off" placeholder="">
+          <input type="password" class="input" id="cvv" maxlength="3" autocomplete="off" placeholder="" title="CVV">
           <label for="cvv" class="label"> CVV </label>
-          <button type="button" id="secret" ></button>
+          <button type="button" class="buttonI" id="secret" ></button>
         </div>
 
         <label class="terminos"> <input type="checkbox" required> Acepto términos y condiciones</label>
