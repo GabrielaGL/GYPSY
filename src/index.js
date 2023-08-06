@@ -34,22 +34,6 @@ messageI.addEventListener('input', () => {
   document.getElementById('message').innerText = messageI.value;
 });
 
-
-
-/** Show secret cvv */
-const cvvI = document.getElementById('cvv');
-const cvvButton = document.getElementById('secret');
-cvvButton.addEventListener('click', () => {
-  if (cvvI.type === 'text') {
-    cvvI.type = 'password';
-    cvvButton.style.backgroundImage = 'url(./imgs/closed-eye.png)';
-  } else {
-    cvvI.type = 'text';
-    cvvButton.style.backgroundImage = 'url(./imgs/open-eye.png)';
-
-  }
-})
-
 /** Input image changes visa-mastercard */
 const cardNumber = document.getElementById("cardNumber");
 const bankDiv = document.getElementById('bank');
@@ -63,6 +47,31 @@ cardNumber.addEventListener('input', () => {
     bankDiv.style.backgroundImage = 'url()';
   }
 })
+
+/** Add slash to exp  */
+const expI = document.getElementById('expiracion');
+expI.addEventListener('input', () => {
+  const expV = expI.value;
+  console.log(expV.length);
+  if(expV.length === 2) {
+    expI.value = expV.slice(0, 2) + '/';
+  }
+})
+
+/** Show secret cvv */
+const cvvI = document.getElementById('cvv');
+const cvvButton = document.getElementById('secret');
+cvvButton.addEventListener('click', () => {
+  if (cvvI.type === 'text') {
+    cvvI.type = 'password';
+    cvvButton.style.backgroundImage = 'url(./imgs/closed-eye.png)';
+  } else {
+    cvvI.type = 'text';
+    cvvButton.style.backgroundImage = 'url(./imgs/open-eye.png)';
+  }
+})
+
+
 
 
 document.querySelector("#pago").addEventListener("click", validateNumber);
