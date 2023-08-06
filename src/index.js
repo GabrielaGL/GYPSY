@@ -34,22 +34,7 @@ messageI.addEventListener('input', () => {
   document.getElementById('message').innerText = messageI.value;
 });
 
-/**   */
-const expiracion = document.getElementById('expiracion');
-expiracion.addEventListener('input', () => {
-  const inputValue = expiracion.value;
-  let formattedValue = '';
 
-  for (let i = 0; i < inputValue.length; i++) {
-    if (i === 2) {
-      formattedValue += '/' + inputValue[i];
-    } else {
-      formattedValue += inputValue[i];
-    }
-  }
-
-  expiracion.value = formattedValue;
-});
 
 /** Show secret cvv */
 const cvvI = document.getElementById('cvv');
