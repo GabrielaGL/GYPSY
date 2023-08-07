@@ -504,4 +504,56 @@ footer {
     top: 1273px;
   }
 
+  li:last-child {
+    animation: wave-animation 0.3s infinite;
+  }
+
+}
+
+
+@media (max-width:768px) {
+  .header img {
+    width: 100px;
+  }
+
+  .header h1 {
+    display: none;
+  }
+
+  .header p {
+    position: absolute;
+    left: 95px;
+    top: 12px;
+    font-size: 11px;
+  }
+
+  .opcsContainer {
+    margin-left: 48%;
+    position: initial;
+  }
+
+  .opcsButton {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .form {
+    width: 386px;
+  }
+
+  .inputContainerS {
+    width: 36%;
+  }
+
+  #secret {
+    margin-left: 138px;
+  }
+
+  .terminos {
+    font-size: 16px;
+  }
+
+  li:last-child {
+    animation: wave-animation 0.3s infinite;
+  }
 }
