@@ -41,6 +41,13 @@ body {
   font-size: 13px;
 }
 
+.opcsContainer {
+  display: flex;
+  align-content: center;
+  position: absolute;
+  margin-left: 61%;
+}
+
 .opcsButton {
   position: relative;
   font-family: 'Poppins';
@@ -478,7 +485,7 @@ footer {
     display: flex;
     align-content: center;
     position: absolute;
-    margin-left: 61%;
+    margin-left: 54%;
   }
 
   .header h3 {
