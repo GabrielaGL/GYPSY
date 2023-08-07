@@ -23,6 +23,11 @@ body {
   align-items: center
 }
 
+.header img {
+  width: 60px;
+  margin-right: -25px;
+}
+
 .header h1 {
   position: relative;
   left: 30px;
@@ -36,17 +41,18 @@ body {
   font-size: 13px;
 }
 
-.header h3 {
+.opcsButton {
   position: relative;
-  left: 420px;
-  top: 6px;
+  font-family: 'Poppins';
   font-size: 14px;
   color: #f85e8e;
-  padding: 25px;
+  background-color: transparent;
+  border: none;
+  padding: 20px;
   cursor: pointer;
 }
 
-.header h3:hover {
+.opcsButton:hover {
   background-color: #f85e8e;
   color: white;
   font-size: 15px;
@@ -440,4 +446,62 @@ footer {
   75% {
     transform: rotate(-15deg);
   }
+}
+
+
+/* Media Queries */
+
+@media (max-width:1024px) {
+  .header {
+    height: 85px;
+  }
+
+  .header>img {
+    width: 90px;
+  }
+
+  .header h1 {
+    position: relative;
+    left: 30px;
+    font-size: 25px;
+    top: -10px;
+  }
+
+  .header p {
+    position: relative;
+    left: -50px;
+    top: 17px;
+    font-size: 10px;
+  }
+
+  .opcsContainer {
+    display: flex;
+    align-content: center;
+    position: absolute;
+    margin-left: 61%;
+  }
+
+  .header h3 {
+    left: 81px;
+    font-size: 13px;
+  }
+
+  .formulariosDatos {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 681px;
+    margin-bottom: 92px;
+    margin-top: 116px;
+  }
+
+  .form {
+    margin-bottom: 41px;
+  }
+
+  footer {
+    position: absolute;
+    top: 1273px;
+  }
+
 }
