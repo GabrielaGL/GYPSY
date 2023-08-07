@@ -38,6 +38,7 @@ messageI.addEventListener('input', () => {
 const cardNumber = document.getElementById("cardNumber");
 const bankDiv = document.getElementById('bank');
 cardNumber.addEventListener('input', () => {
+  bankDiv.style.backgroundImage = 'url()';
   const cardNumberV = cardNumber.value;
   if (cardNumberV.startsWith('4')) {
     bankDiv.style.backgroundImage = 'url(./imgs/visa.png)';
