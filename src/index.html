@@ -18,6 +18,8 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
 </head>
 
 <body>
@@ -26,6 +28,20 @@
 			<img src="./imgs/gypsy-logo.png" alt="logo">
 			<h1>GYPSY</h1>
 			<p> Regalos increíbles a un click de distancia </p>
+
+			<div class="menu-collapse">
+				<input type="checkbox" id="active">
+				<label for="active" class="menu-btn"><span></span></label>
+				<label for="active" class="close"></label>
+				<div class="wrapper">
+					<ul>
+						<li><a href="#">Nosotros</a></li>
+						<li><a href="#">Comercios Aliados</a></li>
+						<li><a href="#">Ayuda</a></li>
+					</ul>
+				</div>
+			</div>
+		
 			<div class="opcsContainer">
 				<button class="opcsButton"> Nosotros </button>
 				<button class="opcsButton"> Comercios Aliados </button>
@@ -41,7 +57,7 @@
 	<div class="formulariosDatos">
 		<div class="form">
 			<div class="containerCenter">
-				<img id="bgGiftCard" src="./imgs/wavy.png" >
+				<img id="bgGiftCard" src="./imgs/wavy.png">
 				<div class="containerI" id="nameBy" style="margin-top: -79px;"> </div>
 				<div class="containerI" id="nameFor" style="margin-top: -41px"> </div>
 				<div class="containerI" id="amount" style="margin-top: 2px"> </div>
@@ -113,8 +129,8 @@
 			</div>
 
 			<div class="inputContainer">
-				<input type="text" class="input" inputmode="numeric" autocomplete="off" placeholder="" maxlength="10" pattern="[0-9]{10}"
-					title="Teléfono a 10 dígitos" required>
+				<input type="text" class="input" inputmode="numeric" autocomplete="off" placeholder="" maxlength="10"
+					pattern="[0-9]{10}" title="Teléfono a 10 dígitos" required>
 				<label for="" class="label"> Teléfono a 10 dígitos </label>
 			</div>
 
@@ -130,21 +146,21 @@
 
 
 			<div class="inputContainer">
-				<input type="text" class="input" inputmode="numeric" id="cardNumber" minlength="1" maxlength="16" autocomplete="off"
-					placeholder="" pattern="[0-9]{13}" title="Número de tarjeta" required>
+				<input type="text" class="input" inputmode="numeric" id="cardNumber" minlength="1" maxlength="16"
+					autocomplete="off" placeholder="" pattern="[0-9]{13}" title="Número de tarjeta" required>
 				<label for="cardNumber" class="label"> Número de Tarjeta </label>
 				<div id="bank"></div>
 			</div>
 
 			<div class="inputContainerS">
-				<input type="text" class="input" inputmode="numeric" id="expiracion" maxlength="5" autocomplete="off" placeholder=""
-					pattern="[0-9]\/\{4}" title="Vencimiento" required>
+				<input type="text" class="input" inputmode="numeric" id="expiracion" maxlength="5" autocomplete="off"
+					placeholder="" pattern="[0-9]\/\{4}" title="Vencimiento" required>
 				<label for="expiracion" class="label"> Vencimiento </label>
 			</div>
 
 			<div class="inputContainerS">
-				<input type="password" class="input" inputmode="numeric" id="cvv" maxlength="3" autocomplete="off" placeholder=""
-					title="CVV" required>
+				<input type="password" class="input" inputmode="numeric" id="cvv" maxlength="3" autocomplete="off"
+					placeholder="" title="CVV" required>
 				<label for="cvv" class="label"> CVV </label>
 				<button type="button" id="secret"></button>
 			</div>
