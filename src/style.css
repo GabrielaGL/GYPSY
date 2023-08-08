@@ -95,6 +95,10 @@ body {
   align-items: center;
 }
 
+.containerCenter img {
+  width: 280px;
+}
+
 /* Estilizar titulo del form (Datos Personales) */
 .title {
   font-size: 22px;
@@ -612,4 +616,37 @@ footer {
     font-size: 14px;
   }
 
+}
+
+@media (max-width:320px) {
+  .opcsContainer {
+    margin-left: 16%;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .form {
+    width: 223px;
+  }
+
+  .containerCenter img {
+    width: 251px;
+  }
+
+  .inputContainerS {
+    width: 27%;
+  }
+
+  .label {
+    font-size: 14px;
+    left: 4px;
+
+  }
+
+  #secret {
+    width: 23px;
+    height: 12px;
+  }
 }
