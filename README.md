@@ -2,12 +2,15 @@
 
 
  <div align="center">
- <img src="imagenes/GYPSY.png" alt="Logo" width="300px" height="300px">
+ <img src="./src/imgs/readme/gypsy-banner.png" alt="Logo" width="100%">
  </div>
  
 <h3 align="center">Autora <br/>
   Gabriela Gomez </h3>
 <br/>
+<p align="center"> 
+<a href="https://gabrielagl.github.io/GYPSY/src/) target="_blank"><strong>Acceso a Despliegue »</strong></a>
+</p>
 
 
 ## Índice
