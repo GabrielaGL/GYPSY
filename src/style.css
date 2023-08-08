@@ -14,7 +14,7 @@ body {
 /* Navbar */
 .header {
   display: flex;
-  position: fixed;
+  position: absolute;
   top: 0px;
   width: 100%;
   height: 50px;
@@ -143,6 +143,7 @@ body {
   width: 90%;
   margin-bottom: 10px;
   margin-top: 3px;
+  z-index: 0;
 }
 
 .inputContainerS {
@@ -154,6 +155,7 @@ body {
   margin-top: 3px;
   margin-right: 49px;
   margin-left: 0px;
+  z-index: 0;
 }
 
 .selector {
@@ -169,13 +171,12 @@ body {
   padding: 0 20px;
   outline: none;
   background: none;
-  z-index: 1;
 }
 
 .selector option {
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
-
+  z-index: 0;
 }
 
 
@@ -530,12 +531,12 @@ footer {
   .header p {
     position: absolute;
     left: 95px;
-    top: 12px;
-    font-size: 11px;
+    top: 14px;
+    font-size: 10px;
   }
 
   .opcsContainer {
-    margin-left: 48%;
+    margin-left: 40%;
     position: initial;
   }
 
@@ -563,4 +564,52 @@ footer {
   li:last-child {
     animation: wave-animation 0.3s infinite;
   }
+}
+
+
+@media (max-width:480px) {
+  .header {
+    height: 108px;
+    background-color: #eedcff;
+  }
+
+  .header img {
+    width: 120px;
+  }
+
+  .header p {
+    display: none;
+  }
+
+  .opcsContainer {
+    margin-left: 24%;
+    display: grid;
+  }
+
+  .opcsButton {
+    text-align: end;
+    font-weight: bold;
+    padding: 7px;
+  }
+
+  .form {
+    width: 262px
+  }
+
+  .inputContainerS {
+    width: 30%;
+  }
+
+  .label {
+    left: 6px;
+  }
+
+  #secret {
+    margin-left: 76px;
+  }
+
+  .terminos {
+    font-size: 14px;
+  }
+
 }
