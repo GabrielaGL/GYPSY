@@ -1,142 +1,80 @@
 <div id="volver"></div>
 
-<h1 align="center"><b>Proyecto Validar Tarjeta de Crédito <br/>
- Laboratoria</b></h1>
- 
+
  <div align="center">
- <img src="imagenes/GYPSY.png" alt="Logo" width="250px" height="250px">
+ <img src="imagenes/GYPSY.png" alt="Logo" width="300px" height="300px">
  </div>
  
-<h2 align="center">Autora <br/>
-  Gabriela Gomez </h2>
+<h3 align="center">Autora <br/>
+  Gabriela Gomez </h3>
 <br/>
 
 
 ## Índice
 
 <a href="#acerca-del-proyecto"> 1. Acerca del Proyecto </a> <br/>
-<a href="#objetivos-de-aprendizaje"> 2. Objetivos de Aprendizaje </a> <br/>
-<a href="#proyecto"> 3. Proyecto </a> <br/>
-<a href="#producto"> 4. Producto </a> <br/>
+<a href="#características-de-la-aplicación"> 2. Características de la Aplicación </a> <br/>
+<a href="#demo"> 3. Demo </a> <br/>
+<a href="#comentarios-adicionales"> 4. Comentarios Adicionales </a> <br/>
 
 
 ## Acerca del proyecto
 
-GYPSY es una plataforma diseñada para guardar tus datos bancarios y acceder a ellos en un sólo click. Por medio de un registro previo en un formulario en el que incluye tus datos personales (nombre completo, teléfono, email y dirección), GYPSY te ayuda a manejar tus tarjetas de manera segura para que realizar compras en línea deje de ser una preocupación y se convierta en algo tan fácil como dar un click y esperar tus compras en la puerta de tu casa.
+Encontrar el regalo perfecto siempre es difícil, ¿Por qué no hacerlo más sencillo? En <b>GYPSY</b> creemos que el mejor regalo que puedes dar es la libertad de elegir. <br/> <br/>
+<b>GYPSY</b> no es sólo una gift card, es La Gift Card. Tenemos una amplia red de comercios aliados que van desde franquicias enormes hasta pequeños negocios en crecimiento; basta de limitarse en un estilo, marca o categoría, con GYPSY puedes tenerlo todo, ¿Lo mejor? No tienes que gastar todo el monto en un sólo establecimiento, lo que hace tus opciones infinitas. Y olvidate de la pesadilla que es perder tu tarjeta o tener que llevarla a todos lados contigo, sólo es necesario usar el código QR que viene anexado en tu tarjeta desde tu teléfono; y si eres más de compras online, GYPSY también es para ti: Sólo tienes que anexar el código alfanumérico que viene integrado en tu email al momento del checkout. ¿Crees que no puede ser más sencillo? Solo tienes que llenar nuestro formulario, agregar una tarjeta visa o mastercard válida, y del resto nos encargamos nosotros. <br/> <br/>
 
-Para realizar este proyecto se usaron conocimientos de Javascript, DOM y CSS. <br/>
-<p align="left"><a href="#volver">Volver</a></p>
-
-## Objetivos de aprendizaje
-
-### HTML
-
-- [x] **Uso de HTML semántico**
-
-  <details><summary>Links</summary><p>
-
-### CSS
-
-- [x] **Uso de selectores de CSS**
-
-- [x]  **Modelo de caja (box model): borde, margen, padding**
-
-
-### Web APIs
-
-- [x] **Uso de selectores del DOM**
-
-- [x] **Manejo de eventos del DOM (listeners, propagación, delegación)**
-
-- [x] **Manipulación dinámica del DOM**
-
-  
-### JavaScript
-
-- [x] **Tipos de datos primitivos**
-
-- [x] **Strings (cadenas de caracteres)**
-
-- [x] **Variables (declaración, asignación, ámbito)**
-
-- [x] **Uso de condicionales (if-else, switch, operador ternario, lógica booleana)**
-
-- [x] **Uso de bucles/ciclos (while, for, for..of)**
-
-- [x] **Funciones (params, args, return)**
-
-- [x] **Pruebas unitarias (unit tests)**
-
-- [x] **Módulos de ECMAScript (ES Modules)**
-
-- [x] **Uso de linter (ESLINT)**
-
-- [x] **Uso de identificadores descriptivos (Nomenclatura y Semántica)**
-
-  
-### Control de Versiones (Git y GitHub)
-
-- [x] **Git: Instalación y configuración**
-
-- [x] **Git: Control de versiones con git (init, clone, add, commit, status, push, pull, remote)**
-
-- [x] **GitHub: Creación de cuenta y repos, configuración de llaves SSH**
-
-- [x] **GitHub: Despliegue con GitHub Pages**
-
- 
-  ### Diseño de producto
-
-- [x] **Seguir los principios básicos de diseño visual**
-<br/>  
 
 <p align="left"><a href="#volver">Volver</a></p>
 
-## Proyecto
-<h3> Hito 1 </h3>
-  
-La interfaz de tu aplicación debe:
-  
-  <li><b>Permitir insertar el número de la tarjeta que se quiere validar (texto) en un campo de texto vacío. </b></li>
-  <li><b>Evitar que puedan escribir caracteres que no sean numéricos (dígitos 0-9).</b> </li>
-  <li><b>Impedir que se intente validar si es que el campo está vacío (no se ha escrito nada).</b> </li>
-  <li><b>Comunicar a la usuaria si se trata una tarjeta válida o no.</b> </li>
-  <li><b>Ocultar todos los dígitos del número de tarjeta con exepción de los últimos 4 caracteres.</b> </li>
+## Características de la Aplicación
+### Características y Curiosidades de la Aplicación
+<li>La Gift Card es personalizable: Mientras el usuario escribe en el input su nombre o el mensaje la tarjeta muestra el resultado en tiempo real.</li>
+<li>El diseño de la Gift Card también es personalizable, basta con cambiar de opción en el selector indicado para que el fondo sea diferente. </li>
+<li>Los inputs tienen restricciones de caracteres: El número telefónico solo permite 10 digitos, el vencimiento cinco caracteres (MM/AA), el CVV permite tres digitos y el mesaje tiene un máximo de 110 caracteres. </li>
+<li>El input para escribir el número de tarjeta cambia en tiempo real para mostrar si la tarjeta utilizada es VISA (inicia con el número 4) o si es Mastercard (inicia con el número 5).</li>
+<li>El input que contiene el CVV tiene un icono para mostrar los números y para ocultarlos, por medida de seguridad.</li>
+<li>El formulario hace una validación antes de comprobar el número de tarjeta, para asegurar que todos los campos hayan sido llenados.</li>
+<li>Una vez que el formluario y el número de tarjeta sean validados, la ventana muestra un modal para mostrar que la compra se ha realizado de manera exitosa. </li>
 <br/>
-<br/>
+
+¿Quieres probar la página? Visita el link del despliegue que está en la primera parte del README. Para probarla puedes usar cualquiera de estos números válidos: VISA (4083952015263), Mastercard (5073952015263).
+
+
+### Accesibilidad
+Para que la página sea más sencilla de utilizar se adoptaron medidas básicas de accesibilidad, entre ellos el uso de html semántico para etiquetar cada elemento de acuerdo a su uso; cada gráfico incluye su `alt` de manera clara, y el código tiene los comentarios pertinentes para hacer mas sencilla su lectura. <br/> <br/>
+Al ser un formulario se tiene en cuenta utilizar `inputmode` para que el tipo de teclado que usa en celulares sea el indicado de acuerdo al tipo de formato necesario, así como un menú desplegable para esas pantallas. A su vez cada input se encuentra enlazado a su label, con el título necesario para que el usuario tenga la referencia del tipo de dato necesario. <br/> <br/>
+Para las `media queries` se utilizaron cuatro breakpoints principales para asegurar la visibilidad en celulares, tabletas y computadoras en su versión horizontal y vertical: Pantallas de max 1024px, 768px, 480px y 320px.
+
+### Mockups
+Estos son los mockups de la aplicación en pantallas celulares, tabletas y laptops: <br/>
+
 <div align="center">
-  <img src="imagenes/validar-campo-vacio.png" width="400px" height="200px"> <br/> <br/>
-  <img src="imagenes/validar-letras.png" width="400px" height="200px"> <br/> <br/>
-  <img src="imagenes/validar-tarjeta.png" width="400px" height="200px"> <br/> <br/>
+  <img src="./src/imgs/readme/mock-phone.png" alt="Mockup de celulares" width="550px" > <br/> <br/>
+  <img src="./src/imgs/readme/mock-tablet.png" alt="Mockup de tabletas" width="550px"> <br/> <br/>
+  <img src="./src/imgs/readme/mock-lap.png" alt="Mockup de laptop" width="550px"> <br/> <br/>
+</div>
+
+<p align="left"><a href="#volver">Volver</a></p>
+
+## Demo
+<div align="center">
+  <img src="./src/imgs/readme/form.png" alt="Formulario lleno" width="550px"> <br/> <br/>
+  <img src="./src/imgs/readme/wrong-form.png" alt="Formulario con datos que no cumplen el formato" width="550px"> <br/> <br/>
+  <img src="./src/imgs/readme/modal.png" alt="Modal con compra exitosa" width="550px"> <br/> <br/>
 </div>
 <br/>
+<br/>
   
-<h3> Pruebas unitarias de los métodos </h3>
-  
-Los métodos de "validator" ("isValid" y "maskify") deben tener cobertura con pruebas unitarias.
-<br/>
-<br/>
-<div align="center">
-  <img src="imagenes/test.png" width="400px" height="200px">
-</div>
-<br/>
- <br/>
 <p align="left"><a href="#volver">Volver</a></p>
 
-## Producto
-<h3> Quiénes son los principales usuarios de producto </h3>
+## Comentarios Adicionales
+### Tecnologías Utilizadas
+<li>Javascript Vainilla</li>
+<li>HTML</li>
+<li>CSS</li>
+<br/>
+¿Encontraste algún error, tienes alguna recomendación o quieres dejarme un comentario? ¡No dudes en contactarme! Puedes dejar un issue dentro del proyecto o contactarme mediante mail o linkedin, toda esa información está en mi perfil de Github.
+<br/> <br/>
 
-<li><b>Cualquiera que quiera hacer una compra en línea y no desee exponer sus datos bancarios a la página en la que quiere realizar su compra </b></li>
 
-<h3> Cuáles son los objetivos de estos usuarios en relación con tu producto</h3>
-
-<li><b>Que sus datos bancarios se encuentren seguros mediante el respaldo de GYPSY</b></li>
-<li><b>Hacer compras en línea de manera segura sin arriesgar sus datos bancarios</b></li>
-<li><b>Evitar fraudes al asociar los datos bancarios a los datos personales y la verificación de dos pasos</b></li>
-
-<h3> Cómo crees que el producto que estás creando está resolviendo sus problemas.</h3>
-
-<li><b>La opcion de validar tarjeta permite saber si los datos ingresados son correctos para guardarlos y poder usarlos más adelante</b></li> 
-  <br/>
-  <br/>
   <p align="left"><a href="#volver">Volver</a></p>
