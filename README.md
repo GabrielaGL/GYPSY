@@ -9,7 +9,7 @@
   Gabriela Gomez </h3>
 <br/>
 <p align="center"> 
-<a href="https://gabrielagl.github.io/GYPSY/src/) target="_blank"><strong>Acceso a Despliegue »</strong></a>
+<a href="https://gabrielagl.github.io/GYPSY/src/" target="_blank"><strong>Acceso a Despliegue »</strong></a>
 </p>
 
 
